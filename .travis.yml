@@ -10,3 +10,6 @@ before_install:
 install: skip
 script:
   - markdown-pdf --out CV-Kristaps-Grinbergs.pdf README.md
+  - DATE=`date "+%d.%m.%Y"`
+  - git commit CV-Kristaps-Grinbergs.pdf -m "Generated PDF ${DATE}"
+  - git push origin master
