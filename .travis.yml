@@ -6,4 +6,10 @@ before_install:
   - git config --local user.email "fassko@gmail.com"
 install: skip
 script:
-  - ./generate_pdf.sh
+  - npm install mdpdf -g
+  - mdpdf README.md CV-Kristaps-Grinbergs.pdf
+  - DATE=`date "+%d.%m.%Y %H %H:%M:%S"`
+  - git checkout master
+  - git commit CV-Kristaps-Grinbergs.pdf -m "Generated PDF ${DATE}"
+  - git push https://${GITHUB_TOKEN}@github.com/fassko/cv.git
+  - echo "Pushed new PDF"
