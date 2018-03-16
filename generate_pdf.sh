@@ -9,6 +9,6 @@ mdpdf README.md CV-Kristaps-Grinbergs.pdf
 DATE=`date "+%d.%m.%Y %H %H:%M:%S"`
 git checkout master
 git commit CV-Kristaps-Grinbergs.pdf -m "Generated PDF ${DATE}"
-git push
+git push https://${GITHUB_TOKEN}@https://github.com/fassko/cv.git
 echo "Pushed new PDF"
 # fi
