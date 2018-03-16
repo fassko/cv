@@ -2,7 +2,7 @@
 
 npm install mdpdf -g
 mdpdf README.md CV-Kristaps-Grinbergs.pdf
-if [ TRAVIS = true ]
+if [ "$TRAVIS" = "true" ]
 then
   echo "Don't push on CI"
 else
