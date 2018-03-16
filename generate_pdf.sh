@@ -7,11 +7,7 @@ mdpdf README.md CV-Kristaps-Grinbergs.pdf
 #   echo "Don't push on CI"
 # else
 DATE=`date "+%d.%m.%Y %H %H:%M:%S"`
-
-if [ "$TRAVIS" = "true" ]
-  git checkout master
-fi
-
+git checkout master
 git commit CV-Kristaps-Grinbergs.pdf -m "Generated PDF ${DATE}"
 git push
 echo "Pushed new PDF"
