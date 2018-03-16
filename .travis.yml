@@ -1,10 +1,9 @@
--language: node_js
--node_js:
--  - "lts/*"
--before_install:
--  - git config --local user.name "Kristaps Grinbergs"
--  - git config --local user.email "fassko@gmail.com"
--install: skip
--script:
--  - npm install mdpdf -g
--  - mdpdf README.md CV-Kristaps-Grinbergs.pdf
+language: node_js
+node_js:
+  - "lts/*"
+before_install:
+  - git config --local user.name "Kristaps Grinbergs"
+  - git config --local user.email "fassko@gmail.com"
+install: skip
+script:
+  - ./generate_pdf.sh
