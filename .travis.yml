@@ -6,10 +6,12 @@ before_install:
   - git config --local user.email "fassko@gmail.com"
 install: skip
 script:
+  - git remote rm origin
+  - git remote add github "https://${GITHUB_TOKEN}@github.com/fassko/cv.git"
+  - git fetch github
+  - git checkout --track github/master
   - npm install mdpdf -g
   - mdpdf README.md CV-Kristaps-Grinbergs.pdf
   - DATE=`date "+%d.%m.%Y %H %H:%M:%S"`
   - git commit CV-Kristaps-Grinbergs.pdf -m "Generated PDF ${DATE}"
-  - git remote rm origin
-  - git remote add github "https://${GITHUB_TOKEN}@github.com/fassko/cv.git"
   - git push github master
