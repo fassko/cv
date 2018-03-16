@@ -1,5 +1,26 @@
 {
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Generate CV pdf",
+  "main": "index.js",
   "dependencies": {
-    "markdown-pdf": "^8.1.1"
-  }
+    "markdown-resume-pdf": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fassko/cv.git"
+  },
+  "keywords": [
+    "cv"
+  ],
+  "author": "fassko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fassko/cv/issues"
+  },
+  "homepage": "https://github.com/fassko/cv#readme"
 }
