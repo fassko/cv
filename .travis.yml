@@ -1,0 +1,9 @@
+language: node_js
+cache:
+  yarn: true
+  directories:
+    - node_modules
+before_install:
+  - yarn install
+install:
+  - markdown-pdf --out CV-Kristaps-Grinbergs.pdf README.md
