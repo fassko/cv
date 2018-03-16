@@ -11,4 +11,4 @@ script:
   - DATE=`date "+%d.%m.%Y %H %H:%M:%S"`
   - git commit CV-Kristaps-Grinbergs.pdf -m "Generated PDF ${DATE}"
   - git remote add origin-cv https://${GITHUB_TOKEN}@github.com/fassko/cv.git > /dev/null 2>&1
-  - git push --quiet --set-upstream origin-cv master
+  - git push origin-cv master
