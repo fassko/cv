@@ -4,7 +4,10 @@ node_js:
 before_install:
   - git config --local user.name "Kristaps Grinbergs"
   - git config --local user.email "fassko@gmail.com"
-after_script:
-  - DATE=`date '+%Y-%m-%d %H:%M:%S'`
+install: skip
+script:
+  - npm install mdpdf -g
+  - mdpdf README.md CV-Kristaps-Grinbergs.pdf
+  - DATE=`date "+%d.%m.%Y %H %H:%M:%S"`
   - git commit CV-Kristaps-Grinbergs.pdf CV-Kristaps-Grinbergs.html -m "Generated PDF ${DATE}"
   - git push "https://${GITHUB_TOKEN}@github.com/fassko/cv.git" master > /dev/null 2>&1

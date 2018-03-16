@@ -12,7 +12,7 @@ Co-Founder, mobile developer at Qminder. Passionate about mobile applications. L
 ### PROJECTS
 
 * [Qminder](https://www.qminder.com/) - waiting line management
-* MeteoTartu app for [iOS, tvOS, watchOS]](https://itunes.apple.com/us/app/meteo-tartu/id1082204986?mt=8) and [macOS](https://itunes.apple.com/us/app/meteo-tartu/id1082225005?mt=12)
+* MeteoTartu app for [iOS, tvOS, watchOS](https://itunes.apple.com/us/app/meteo-tartu/id1082204986?mt=8) and [macOS](https://itunes.apple.com/us/app/meteo-tartu/id1082225005?mt=12)
 * [Dodies.lv iOS app](https://itunes.apple.com/us/app/dodies-lv/id1080800199?mt=8)
 * [Weather Latvia iOS app](https://itunes.apple.com/us/app/weather-latvia/id1350252673?mt=8)
 
