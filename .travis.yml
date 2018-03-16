@@ -6,10 +6,12 @@ cache:
   directories:
     - node_modules
 before_install:
+  - git config --local user.name "Kristaps Grinbergs"
+  - git config --local user.email "fassko@gmail.com"
   - yarn install
 install: skip
 script:
   - markdown-pdf --out CV-Kristaps-Grinbergs.pdf README.md
   - DATE=`date "+%d.%m.%Y"`
   - git commit CV-Kristaps-Grinbergs.pdf -m "Generated PDF ${DATE}"
-  - git push origin master
+  - git push "https://${GITHUB_TOKEN}@github.com/fassko/cv.git" master > /dev/null 2>&1
