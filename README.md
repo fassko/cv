@@ -128,4 +128,4 @@ Limited working proficiency
 * [Orienteering sport](https://en.wikipedia.org/wiki/Orienteering)
 * Cycling
 * Technologies
-* Geocaching
+* [Geocaching](https://www.geocaching.com/blog/2018/03/what-is-geocaching/)
